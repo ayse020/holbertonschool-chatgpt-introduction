@@ -9,14 +9,5 @@ def factorial(n):
     return result
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit(1)
-    
-    try:
-        n = int(sys.argv[1])
-        if n < 0:
-            sys.exit(1)
-        result = factorial(n)
-        print(f"{n}! = {result}")
-    except:
-        sys.exit(1)
+    f = factorial(int(sys.argv[1]))
+    print(f)
