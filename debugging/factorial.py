@@ -2,15 +2,10 @@
 import sys
 
 def factorial(n):
-    """
-    Calculate the factorial of a non-negative integer n.
-    n: integer >= 0
-    Returns: n! as integer
-    """
     result = 1
     while n > 1:
         result *= n
-        n -= 1  # hər iterasiyada n-i azaldırıq
+        n -= 1
     return result
 
 if len(sys.argv) < 2:
@@ -27,5 +22,4 @@ except ValueError:
     sys.exit(1)
 
 f = factorial(n)
-print(f"{n}! = {f}")
-
+print(f)  # yalnız nəticəni çap edirik
